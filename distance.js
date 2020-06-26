@@ -5,6 +5,7 @@ const zipCodeURL = 'https://www.zipcodeapi.com/rest/';
 
 var distance = {
     find: function(req, res, next) {
+      request(zipCodeURL + apiKey
         +'/distance.json/' + req.params.zipcode1 + '/'
         + req.params.zipcode2 + '/mile',
       function (error, response, body) {

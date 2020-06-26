@@ -1,7 +1,7 @@
 'use strict';
 
 var properties = require('../package.json')
-var distance = require('..service/distance');
+var distance = require('../distance');
 
 var controllers = {
   about: function(req, res){
